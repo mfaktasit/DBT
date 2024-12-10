@@ -1,0 +1,18 @@
+version: 2
+
+exposures:
+  - name: executive_dashboard
+    label: Executive Dashboard
+    type: dashboard
+    maturity: low
+    url: https://12609e30.us1a.app.preset.io/superset/dashboard/8/?edit=true&native_filters_key=nnfg4xfVpwL663GnTMF6TqIM99sPYg0g2fzlzg0rg4e1fow4DRua-jqECwq8hhvJ
+    description: Executive Dashboard about Airbnb listings and hosts
+      
+
+    depends_on:
+      - ref('dim_listings_w_hosts')
+      - ref('mart_full_moon_reviews')
+
+    owner:
+      name: Fatih Aktas
+      email: mfaktasit@gmail.com

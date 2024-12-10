@@ -1,0 +1,96 @@
+[0m00:22:31.633441 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216769FF150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021675BF66D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216769F2690>]}
+
+
+============================== 00:22:31.639440 | 19af09af-6fa7-4170-a4e1-2518dcf84319 ==============================
+[0m00:22:31.639440 [info ] [MainThread]: Running with dbt=1.7.19
+[0m00:22:31.641444 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Fatih\\.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init dbtlearn', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:22:31.644444 [debug] [MainThread]: Starter project path: C:\Users\Fatih\Desktop\Course\venv\Lib\site-packages\dbt\include\starter_project
+[0m00:22:31.702440 [info ] [MainThread]: 
+Your new dbt project "dbtlearn" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m00:22:31.707442 [info ] [MainThread]: Setting up your profile.
+[0m00:23:50.504323 [error] [MainThread]: Encountered an error:
+
+[0m00:23:50.510481 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\Fatih\Desktop\Course\venv\Lib\site-packages\dbt\cli\requires.py", line 91, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Fatih\Desktop\Course\venv\Lib\site-packages\dbt\cli\requires.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Fatih\Desktop\Course\venv\Lib\site-packages\dbt\cli\main.py", line 516, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\Fatih\Desktop\Course\venv\Lib\site-packages\dbt\task\init.py", line 344, in run
+    self.setup_profile(profile_name)
+  File "C:\Users\Fatih\Desktop\Course\venv\Lib\site-packages\dbt\task\init.py", line 264, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "C:\Users\Fatih\Desktop\Course\venv\Lib\site-packages\dbt\task\init.py", line 181, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\Users\Fatih\Desktop\Course\venv\Lib\site-packages\dbt\task\init.py", line 165, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Fatih\Desktop\Course\venv\Lib\site-packages\dbt\task\init.py", line 115, in generate_target_from_input
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Fatih\Desktop\Course\venv\Lib\site-packages\click\termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Fatih\Desktop\Course\venv\Lib\site-packages\click\termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m00:23:50.520583 [debug] [MainThread]: Command `dbt init` failed at 00:23:50.520583 after 79.03 seconds
+[0m00:23:50.521583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216769F3790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216769E2010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021670ED7590>]}
+[0m00:23:50.522578 [debug] [MainThread]: Flushing usage events
+[0m00:24:09.333506 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216B37FD6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216B3621590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216B3620F50>]}
+
+
+============================== 00:24:09.339544 | 2be4c9f2-48ca-4e04-a5cc-3806e7441ca6 ==============================
+[0m00:24:09.339544 [info ] [MainThread]: Running with dbt=1.7.19
+[0m00:24:09.341507 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Fatih\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt init dbtlearn', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m00:24:09.345535 [info ] [MainThread]: A project called dbtlearn already exists here.
+[0m00:24:09.348511 [debug] [MainThread]: Command `dbt init` succeeded at 00:24:09.347543 after 0.15 seconds
+[0m00:24:09.349508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216B371C290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216ADC47F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216ADCD7590>]}
+[0m00:24:09.350508 [debug] [MainThread]: Flushing usage events
+[0m00:28:33.182435 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AE6F04110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AE6EF0CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AE129C110>]}
+
+
+============================== 00:28:33.193436 | 8a8b9a91-5d6b-451e-9251-a57b24f3fa31 ==============================
+[0m00:28:33.193436 [info ] [MainThread]: Running with dbt=1.7.19
+[0m00:28:33.195441 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Fatih\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init dbtlearn', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m00:28:33.199441 [debug] [MainThread]: Starter project path: C:\Users\Fatih\Desktop\Course\venv\Lib\site-packages\dbt\include\starter_project
+[0m00:28:33.273027 [info ] [MainThread]: 
+Your new dbt project "dbtlearn" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m00:28:33.280028 [info ] [MainThread]: Setting up your profile.
+[0m00:33:23.293599 [info ] [MainThread]: Profile dbtlearn written to C:\Users\Fatih\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m00:33:23.300598 [debug] [MainThread]: Command `dbt init` succeeded at 00:33:23.299601 after 290.34 seconds
+[0m00:33:23.303611 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AE6EFC5D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AE69A3010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024AE1297590>]}
+[0m00:33:23.305601 [debug] [MainThread]: Flushing usage events
